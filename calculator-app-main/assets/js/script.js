@@ -52,7 +52,7 @@ document.querySelectorAll(".theme").forEach(item=>{
   })
 
  if(!e){
-  theme= localStorage.getItem("theme")
+  theme= localStorage.getItem("theme") || "default"
   document.querySelector(`button[theme=${theme}]`).classList.remove("hidden")
  }else{
 

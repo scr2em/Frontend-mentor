@@ -13,7 +13,7 @@ html[theme="default"] {
   --text: hsl(221, 14%, 31%);
   --attr-text: white;
   --header-text: white;
-  --num-size: 2rem;
+  --num-size: 2.5rem;
   --border-radius: 10px;
 }
 html[theme="light"] {
@@ -56,7 +56,7 @@ body {
 .container {
   /* max-width: 30%; */
   min-width: 375px;
-  height: 80vh;
+  height: auto;
 }
 .header {
   display: flex;
@@ -155,7 +155,7 @@ body {
     background-color: var(--bg-main);
   }
   .container {
-    min-width: 600px;
+    min-width: 550px;
   }
   .keyboard {
     grid-gap: 2rem;
