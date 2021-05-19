@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&amp;display=swap" rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header__left">
+        <h2>Calc</h2>
+      </div>
+      <div class="header__right">
+        <div>THEME</div>
+        <div class="toggle-area">
+          <div class="toggle-area__numbers">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class="toggle-button">
+            <button class="toggle-button__dot theme" theme="default" onclick="changeTheme(this)" ></button>
+            <button class="toggle-button__dot theme" theme="light" onclick="changeTheme(this)" ></button>
+            <button class="toggle-button__dot theme" theme="dark" onclick="changeTheme(this)"  ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen" id="result">0</div>
+    <div class="keyboard">
+      <div class="key" onclick="handleNumberClick(7)">7</div>
+      <div class="key" onclick="handleNumberClick(8)">8</div>
+      <div class="key" onclick="handleNumberClick(9)">9</div>
+      <div class="key" id="delete" onclick="handleDelete()">DEL</div>
+      <div class="key" onclick="handleNumberClick(4)">4</div>
+      <div class="key" onclick="handleNumberClick(5)">5</div>
+      <div class="key" onclick="handleNumberClick(6)">6</div>
+      <div class="key" onclick="handleOperator('+')">+</div>
+      <div class="key" onclick="handleNumberClick(1)">1</div>
+      <div class="key" onclick="handleNumberClick(2)">2</div>
+      <div class="key" onclick="handleNumberClick(3)">3</div>
+      <div class="key" onclick="handleOperator('-')">-</div>
+      <div class="key" onclick="handleNumberClick('.')">.</div>
+      <div class="key" onclick="handleNumberClick(0)">0</div>
+      <div class="key" onclick="handleOperator('/')">/</div>
+      <div class="key" onclick="handleOperator('*')">x</div>
+      <div class="key" onclick="reset()" id="reset">RESET</div>
+      <div class="key" onclick="ev()" id="equal">=</div>
+    </div>
+  </div>
+</body>
+<script src="assets/js/script.js">
+
+    </script>
+</html>
